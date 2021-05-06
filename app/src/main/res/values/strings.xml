@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Travels</string>
+    <string name="special">Special</string>
+    <string name="travel_package_image">Travel package image</string>
+    <string name="final_price">Final price:</string>
+    <string name="make_payment">Make payment</string>
+    <string name="locale_format_date">MM/dd</string>
+    <string name="description_payment_act">Enter the credit card information you want to use for payment</string>
+    <string name="purchase_price">Purchase price:</string>
+    <string name="card_number">Card Number</string>
+    <string name="month_format_card_number">MM</string>
+    <string name="year_format_credit_card_number">YY</string>
+    <string name="cvc">CVC</string>
+    <string name="card_name">Card name</string>
+    <string name="check_out">Check Out</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="successful_purchase">Successful purchase :)</string>
+    <string name="check_the_purchase_summary">Check the purchase summary:</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PurchaseSummaryActivity">
+
+    <View
+        android:id="@+id/view_orange_background_purchase_summary_activity"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_congratulations_purchase_summary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/congratulations"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/view_orange_background_purchase_summary_activity"
+        app:layout_constraintStart_toStartOf="@id/view_orange_background_purchase_summary_activity"
+        app:layout_constraintTop_toTopOf="@id/view_orange_background_purchase_summary_activity" />
+
+    <TextView
+        android:id="@+id/tv_success_text_purchase_summary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/successful_purchase"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/view_orange_background_purchase_summary_activity"
+        app:layout_constraintStart_toStartOf="@id/view_orange_background_purchase_summary_activity"
+        app:layout_constraintTop_toBottomOf="@id/tv_congratulations_purchase_summary_activity" />
+
+    <TextView
+        android:id="@+id/tv_summary_description_purchase_summary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/check_the_purchase_summary"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_orange_background_purchase_summary_activity" />
+
+    <ImageView
+        android:id="@+id/iv_package_purchase_summary_activity"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/travel_package_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_summary_description_purchase_summary_activity"
+        tools:srcCompat="@drawable/sao_paulo_sp" />
+
+    <TextView
+        android:id="@+id/tv_local_package_purchase_summary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_package_purchase_summary_activity"
+        tools:text="São Paulo" />
+
+    <TextView
+        android:id="@+id/tv_date_package_purchase_summary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/tv_local_package_purchase_summary_activity"
+        app:layout_constraintTop_toBottomOf="@id/tv_local_package_purchase_summary_activity"
+        tools:text="08/12 - 10/12 de 2017" />
+
+    <TextView
+        android:id="@+id/tv_price_package_purchase_summary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/tv_date_package_purchase_summary_activity"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_package_purchase_summary_activity"
+        tools:text="R$ 243,99" />
+</androidx.constraintlayout.widget.ConstraintLayout>
